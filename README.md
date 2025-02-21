@@ -1,5 +1,19 @@
-# KeyFox
-A simple, minimal OneLiner Keyboard-centered CSS for Firefox.
+# ~~KeyFox~~ MKbFox
+
+A fork and continuation of alfaaarex's excellent KeyFox theme: a minimal keyboard-centered CSS for Firefox.
+
+## What this fork is.
+
+As an active user of this theme, I have forked this project to resolve the increasing bugs and the subjective shortcomings I feel I can improve upon.
+
+**Goals of this fork:**
+- Fix bugs that arise as Firefox continues to update.
+- Improve areas I feel the original theme is lacking, such as:
+- Better small screen support to prevent icon overlap.
+- (Possibly) Improve the mouse experience, without sacrificing much keyboard focus.
+- Maybe more?
+
+## What this theme is.
 
 **Features:**
 - Minimal interface.
