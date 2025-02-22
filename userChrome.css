@@ -185,6 +185,10 @@ tab[selected="true"] .tab-background {
 }
 
 .tab-close-button {
-  transition: all 0.3s ease !important;
   border-radius: 4px !important;
 }
+
+/*================ FORK TWEAKS ================*/
+
+.tabbrowser-tab:not(:hover,[selected]) .tab-close-button { visibility: hidden; }
+
