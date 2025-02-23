@@ -105,6 +105,9 @@
 /* "Shield" icon */
 #tracking-protection-icon-container { display: none !important }
 
+/* Firefox Sync */
+#fxa-toolbar-menu-button { display: none !important }
+
 
 /* Simplifying interface */
 
