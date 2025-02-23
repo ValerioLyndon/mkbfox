@@ -203,5 +203,4 @@ tab[selected="true"] .tab-background {
 
 /*================ FORK TWEAKS ================*/
 
-.tabbrowser-tab:not(:hover,[selected]) .tab-close-button { visibility: hidden; }
-
+.tabbrowser-tab:not(:hover,[selected]) .tab-close-button { display: none; }
