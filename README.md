@@ -51,3 +51,13 @@ And all the browser elements have been rearranged into a single bar so as to ded
 I've seen many people complaining about touch-first apps, since they require users to lift their hands off the keyboard and then use the touchpad or mouse, thereby.....making them suffer, I guess? But anyway, this theme has __NO CAPTION BUTTONS__.
 So, Min, Max, Close? Poof! Gone!
 Although you can still control the browser using the buttons on the toolbar, keystrokes are always available.
+
+## IAQ: Infrequently Asked Questions
+
+> There is nowhere for me to drag the window.
+
+Right click on the menu icon or in the empty space tabs fill up and choose `Customize toolbar...`. From there you can add any number of extra `Flexible Space` sections to your top bar which will enable you to drag the window around.
+
+> The colours are wrong.
+
+Go to your Firefox theme settings (`about:addons`. you'll see the `Theme` tab) and `Enable` the default Mozilla-created `Dark` theme. If the colours are still wrong, open a GitHub issue.
