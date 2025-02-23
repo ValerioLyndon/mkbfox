@@ -134,6 +134,17 @@ toolbar#nav-bar {
   padding-bottom: 4px !important;
 }
 
+/* reset spacing and move buttons from start to end */
+#tabbrowser-tabs {
+  border-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+#firefox-view-button {
+  order: 1;
+}
+
 /*================ DARK THEME ================*/
 :root:-moz-lwtheme-brighttext,
 .sidebar-panel[lwt-sidebar-brighttext],
