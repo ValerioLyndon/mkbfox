@@ -4,14 +4,13 @@ A fork and continuation of alfaaarex's excellent KeyFox theme: a minimal keyboar
 
 ## What this fork is.
 
-As an active user of this theme, I have forked this project to resolve the increasing bugs and the subjective shortcomings I feel I can improve upon.
+This fork exists to fix bugs that arise with Firefox's continued updates and to improve upon anywhere I feel I can improve without losing the original spirit.
 
-**Goals of this fork:**
-- Fix bugs that arise as Firefox continues to update.
-- Improve areas I feel the original theme is lacking, such as:
-- Better small screen support to prevent icon overlap.
-- (Possibly) Improve the mouse experience, without sacrificing much keyboard focus.
-- Maybe more?
+**Implemented and future changes:**
+- [x] Fixed multiple critical bugs. Attempting to merge upstream so everyone receives these.
+- [x] Improved usage on narrower monitors by fixing overlap issues.
+- [ ] (Maybe) Theme dropdown menus to better match the top bar.
+- [ ] (Maybe) Provide optional customisation tweaks such as returning the min/max/close buttons.
 
 ## What this theme is.
 
