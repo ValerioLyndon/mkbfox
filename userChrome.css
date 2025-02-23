@@ -36,7 +36,8 @@
   margin-left : var(--navbarWidth) !important;
 }
 
-#nav-bar {
+#nav-bar#nav-bar {
+  padding-block: 2px !important;
   margin-right: calc(100vw - var(--navbarWidth)) !important;
 }
 
