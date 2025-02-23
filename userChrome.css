@@ -43,6 +43,7 @@
 
 #urlbar-container {
   min-width   : 0px !important;
+  flex-shrink: 1;
 }
 
 :root[uidensity="compact"] #nav-bar {
