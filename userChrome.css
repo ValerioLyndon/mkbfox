@@ -36,12 +36,14 @@
   margin-left : var(--navbarWidth) !important;
 }
 
-#nav-bar {
+#nav-bar#nav-bar {
+  padding-block: 2px !important;
   margin-right: calc(100vw - var(--navbarWidth)) !important;
 }
 
 #urlbar-container {
   min-width   : 0px !important;
+  flex-shrink: 1;
 }
 
 :root[uidensity="compact"] #nav-bar {
@@ -132,6 +134,17 @@ toolbar#nav-bar {
   background: rgba(var(--dark-color), 1) !important;
   box-shadow: none !important;
   padding-bottom: 4px !important;
+}
+
+/* reset spacing and move buttons from start to end */
+#tabbrowser-tabs {
+  border-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+#firefox-view-button {
+  order: 1;
 }
 
 /*================ DARK THEME ================*/
