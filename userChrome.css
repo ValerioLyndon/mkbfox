@@ -115,7 +115,13 @@
 }
 
 #urlbar .urlbar-icon {
-  fill        : var(--toolbar-color) !important;
+  fill: var(--toolbar-color) !important;
+}
+
+/* url bar icons */
+
+#urlbar:not(:hover,:focus,:focus-within) #page-action-buttons {
+  display: none;
 }
 
 /*================== TABS BAR ==================*/
