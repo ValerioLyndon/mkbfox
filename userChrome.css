@@ -194,6 +194,17 @@ toolbar#nav-bar {
   width: max( calc(var(--urlbar-width) + 2 * var(--urlbar-margin-inline)) , min(600px, 80vw) ) !important;
 }
 
+.urlbarView {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.search-one-offs {
+  order: -1;
+}
+.search-panel-one-offs-header {
+  display: none !important;
+}
 .searchbar-engine-one-off-item {
   margin-inline-end: 4px !important;
 }
