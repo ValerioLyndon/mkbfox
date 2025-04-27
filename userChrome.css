@@ -11,7 +11,7 @@
   --third-accent-color: 235, 219, 178;
   --light-color: 255, 255, 255;
   --dark-color: 0, 0, 0;
-  --url-back: 249, 249, 251;	
+  --url-back: 249, 249, 251;
   --caption-min-color: 215, 153, 33;
   --caption-max-color: 69, 133, 136;
   --caption-close-color: 177, 98, 134;
@@ -32,33 +32,49 @@
 }
 
 
-#TabsToolbar {
-  margin-left : var(--navbarWidth) !important;
+/*Internal variables used for calculations */
+
+:root {
+  --btn-size: 37px;
+  --urlbar-size: 250px;
+  --navbar-minimum: calc(22px + var(--urlbar-size) + var(--btn-size) * 5);
+}
+:root[uidensity="compact"] {
+  --btn-size: 37px;
+}
+:root:not([uidensity="compact"]):not([uidensity="touch"]) {
+  --btn-size: 44px;
+}
+:root[uidensity="touch"] {
+  --btn-size: 49px;
 }
 
-#nav-bar#nav-bar {
+
+
+#navigator-toolbox {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: left;
+}
+#navigator-toolbox toolbar:not(#nav-bar) {
+  flex-grow: 99 !important;
+  flex-basis: 100% !important;
+}
+#navigator-toolbox toolbar#nav-bar {
+  flex-grow: 1;
+  flex-basis: 0;
+  height: var(--btn-size) !important;
   padding-block: 2px !important;
-  margin-right: calc(100vw - var(--navbarWidth)) !important;
+  min-width: min-content;
+  min-width: var(--navbar-minimum); /* have to use a variable here because min-content does not allow buttons to be dynamically removed by Firefox as it gets smaller */
+}
+#navigator-toolbox toolbar#TabsToolbar {
+  min-width: 300px;
 }
 
 #urlbar-container {
-  min-width   : 0px !important;
-  flex-shrink: 1;
-}
-
-:root[uidensity="compact"] #nav-bar {
-  margin-top  : -37px !important;
-  height      : 37px !important;
-}
-
-:root:not([uidensity="compact"]):not([uidensity="touch"]) #nav-bar {
-  margin-top  : -44px !important;
-  height      : 44px !important;
-}
-
-:root[uidensity="touch"] #nav-bar {
-  margin-top  : -49px !important;
-  height      : 49px !important;
+  width: auto !important;
+  min-width: 250px;
 }
 
 
@@ -160,8 +176,8 @@ toolbar#nav-bar {
 :root:-moz-lwtheme-brighttext,
 .sidebar-panel[lwt-sidebar-brighttext],
 body[lwt-sidebar-brighttext] {
-	--main-bgcolor: var(--dark-color);
-	--transparent-bgcolor: var(--dark-color);
+  --main-bgcolor: var(--dark-color);
+  --transparent-bgcolor: var(--dark-color);
 }
 
 tab[selected="true"] .tab-content {
