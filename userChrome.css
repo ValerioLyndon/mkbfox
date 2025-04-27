@@ -77,6 +77,19 @@
   min-width: 250px;
 }
 
+/* menu bar */
+#toolbar-menubar {
+  min-height: initial !important; /* fix overly tall menubar */
+}
+#menubar-items {
+}
+#main-menubar {
+  height: 100%;
+}
+#main-menubar > menu {
+  height: 100%;
+}
+
 
 /* Back Hide */
 #back-button[disabled="true"] { display: none !important }
