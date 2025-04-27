@@ -188,6 +188,16 @@ toolbar#nav-bar {
   order: 1;
 }
 
+/*============= EXPANDED URL BAR =============*/
+
+#urlbar[open] {
+  width: max( calc(var(--urlbar-width) + 2 * var(--urlbar-margin-inline)) , min(600px, 80vw) ) !important;
+}
+
+.searchbar-engine-one-off-item {
+  margin-inline-end: 4px !important;
+}
+
 /*================ DARK THEME ================*/
 :root:-moz-lwtheme-brighttext,
 .sidebar-panel[lwt-sidebar-brighttext],
